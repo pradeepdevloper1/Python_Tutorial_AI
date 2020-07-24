@@ -1,0 +1,3 @@
+git remote add origin https://github.com/pradeepdeveloper1/Python_Tutorial_AI.git
+
+git push -u origin master
