@@ -108,6 +108,18 @@ print(isinstance(lst2,list))
 
 
 
+#Arbitrary Argument 
+
+def greet(*names):
+    """" this function greet person with provided arguments
+    """
+    print(names)
+    for name in names:
+        print(' Hello  {0}!'.format(name))
+    
+    
+greet("Pradeep","raj","anuj","avi","avantika")  
+
 #map Function
 numbers=[1,2,3,4,5,6,7,8,9]
 
