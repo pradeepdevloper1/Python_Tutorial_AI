@@ -1,0 +1,21 @@
+#Module is File containing definations and Statement
+
+
+import math
+print(math.pi)
+
+import datetime
+print(datetime.datetime.now())
+
+import math as m
+print(m.pi)
+
+#import module   import date time
+from datetime import datetime
+print(datetime.now())
+
+#import math 
+from math import *
+print("Value of PI Is: "+str(pi))
+
+# dir gives all the names in module
