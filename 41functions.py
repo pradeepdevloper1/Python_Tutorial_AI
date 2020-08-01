@@ -127,3 +127,41 @@ product=reduce(multiply,lst)
 print(product)
 
     
+    
+#UserDefined Functions
+
+def add(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+    
+def multiply(a,b):
+    return a*b
+    
+def divide(a,b):
+    return a/b
+    
+
+print('Enter choice')
+print('Enter 1 for addition' )
+print('Enter 2 for subtraction' )
+print('Enter 3 for multiplication' )
+print('Enter 4 for division' )
+
+choice=int(input("Enter Choice : "))
+num1=float(input("Enter Num1 : "))
+num2=float(input("Enter Num2 : "))
+
+if choice==1:
+    print(f"Addition of {num1} and {num2} is : ",add(num1,num2))
+elif choice==2:
+    print(f"subtraction of {num1} and {num2} is : ",sub(num1,num2))
+elif choice==3:
+    print(f"Multiplication of {num1} and {num2} is : ",multiply(num1,num2))  
+elif choice==4:
+    print(f"Division of {num1} and {num2} is : ",divide(num1,num2))    
+else :
+    print("Please Enter Valid Input ")    
+    
+      
