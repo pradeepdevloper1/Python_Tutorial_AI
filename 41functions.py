@@ -50,4 +50,31 @@ def compute_HCF(a,b):
 num1=98
 num2=78
 print(f"HCF of {num1} and {num2} is:",compute_HCF(num1,num2))   
+ 
 
+#Types of Function
+#1 Built In Function
+#2 User Defined Function
+
+#absolute function
+num1=-100
+print(abs(num1))
+
+# all function
+# return true when  elements are iterable
+
+lst=[1,2,3,4,5,6,7,8,9]
+print(all(lst))
+
+lst=[0,1,2,3,4,5,6,7,8,9]
+print(all(lst))
+
+lst=[2,3,4,5,6,7,8,9,False]
+print(all(lst))
+
+#dir
+numbers=[1,2,3,4,5]
+print(dir(numbers))
+
+#edivmod
+print(divmod(9,2))
