@@ -164,4 +164,46 @@ elif choice==4:
 else :
     print("Please Enter Valid Input ")    
     
-      
+
+    
+# Function with Two argument
+def greet(name,msg):
+    """ 
+    this Function is used to Greet 
+    """
+    print(f' hello  {name} , {msg}!')
+    
+greet('Pradeep','Good Morning')
+
+
+def greet(name,msg="Good Evening"):
+    """ 
+    this Function is used to Greet with one argument  default set
+    """
+    print(f' hello  {name} , {msg}!')
+    
+greet('Pradeep')
+    
+    
+#fdefault arg must be in second 
+def greet(msg="Good Evening",name):
+    """ 
+    this Function is used to Greet with one argument  default set
+    """
+    print(f' hello  {name} , {msg}!')
+    
+greet('Pradeep')
+
+
+
+#Keyword Argument 
+
+def greet(**kwargs):
+    """" this function greet person with provided arguments
+    """
+    if kwargs:
+      print(' Hello {0}, {1}!'.format(kwargs['name'],kwargs['msg']))
+    
+greet(name="Pradeep",msg="Good AfterNoon")     
+
+    
