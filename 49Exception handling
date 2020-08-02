@@ -1,0 +1,11 @@
+print(dir(__builtins__))
+
+import sys
+lst=['b',0,1]
+for entry in lst:
+    try:
+        print("The Entry is ",entry) 
+        r=1/int(entry)
+    except:
+        print("OOps "sys.exc_info()[0],"occured")
+print("the reciprocal of ",entry ," is ",r)   
