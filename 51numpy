@@ -1,1 +1,9 @@
+#numpy  objects
+#high level numbers objects : integers and Floating Points
+# containers list(costless insert and append)  and dictionaries(fast Lookup)
+
+
+import numpy as np 
+print(np.arange(10))
+
 
