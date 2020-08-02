@@ -9,3 +9,22 @@ for entry in lst:
     except:
         print("OOps "sys.exc_info()[0],"occured")
 print("the reciprocal of ",entry ," is ",r)   
+
+
+
+
+try:
+    num=int(input("Enter Positive Number"))
+    if num<=0:
+        raise ValueError("Entered Negative Error");
+        
+except ValueError as e:
+    print(e)
+    
+    
+ try:
+   f=open(sample.py)
+
+finally:
+    f.close()   
+ 
