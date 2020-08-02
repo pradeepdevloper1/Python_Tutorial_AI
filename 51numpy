@@ -7,3 +7,161 @@ import numpy as np
 print(np.arange(10))
 
 
+import timeit
+l=range(100)
+timeit.timeit( [i**2 for i in l])
+
+
+
+
+import numpy as np
+a=np.array([1,2,3,4,5])
+print(a)
+#dimention
+print(a.ndim)
+#shape
+print(a.shape)
+length
+print(len(a))
+
+
+
+#2d
+import numpy as np
+a=np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print(a)
+#dimention
+print(a.ndim)
+#shape
+print(a.shape)
+#length
+print(len(a))
+
+
+#3d
+import numpy as np
+a=np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
+print(a)
+#dimention
+print("dimention:",a.ndim)
+#shape
+print("shape",a.shape)
+#length
+print("length ",len(a))
+
+
+
+
+import numpy as np
+a=np.arange(1,10,2)
+
+# divide 0 to 1 in 6 parts
+import numpy as np
+a=np.linspace(0,1,6)
+print(a)
+
+
+#all 1
+import numpy as np
+a=np.ones((3,3))
+print(a)
+
+
+#all 0 
+import numpy as np
+a=np.zeros((3,3))
+print(a)
+
+
+#index matrix
+import numpy as np
+a=np.eye(3)
+print(a)
+
+
+#diagonal matrix
+import numpy as np
+a=np.diag([1,2,3,4])
+print(a)
+
+
+print(np.diag(a))
+
+
+
+
+import numpy as np
+a=np.random.rand(4,4)
+print(a)
+
+
+import numpy as np
+a=np.random.randn(4,4)
+print(a)
+
+
+import numpy as np
+a=np.arange(4)
+print(a)
+print(a.dtype)
+
+
+import numpy as np
+a=np.arange(4,dtype='float64')
+print(a)
+print(a.dtype)
+
+import numpy as np
+a=np.array([1+2j,2+4j])
+print(a)
+print(a.dtype)
+
+
+import numpy as np
+a=np.array([True,False,True,False])
+print(a)
+print(a.dtype)
+
+
+
+import numpy as np
+a=np.arange(10)
+print(a[5])
+
+
+import numpy as np
+a=np.diag([1,2,3])
+print(a[2,2])
+
+
+#slicing
+import numpy as np
+a=np.arange(10)
+a[5:]=23
+print(a)
+
+
+
+
+import numpy as np
+a=np.arange(10)
+print(a)
+b=a[::2]
+print(b)
+print(np.shares_memory(a,b))
+
+
+import numpy as np
+a=np.arange(10)
+print(a)
+b=a[::2].copy()
+print(b)
+print(np.shares_memory(a,b))
+
+
+import numpy as np
+a=np.random.randint(0,20,15)
+print(a)
+mask=(a%2==0)
+exctracted_from_mask=a[mask]
+print(exctracted_from_mask)
