@@ -1,0 +1,15 @@
+import pdb
+
+def seq(num):
+    for i in range(num):
+        pdb.set_trace()
+        print(i)
+    return
+
+seq(10)
+
+#c-continue
+#p num
+#p i
+#p locals()
+#h-help
